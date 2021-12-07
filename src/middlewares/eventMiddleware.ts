@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express'
-import eventValidator from 'src/validators/eventValidator'
+import eventValidator from '../validators/eventValidator'
 
 const eventMiddleware = (req: Request, res: Response, next: NextFunction) => {
 

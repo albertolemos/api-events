@@ -2,7 +2,7 @@ import { Router, Request, Response } from 'express'
 import {
   createEventHandler,
   getAllEventsHandler,
-} from 'src/controllers/eventController'
+} from './controllers/eventController'
 import eventMiddleware from './middlewares/eventMiddleware'
 import uploadImage from './services/storage'
 

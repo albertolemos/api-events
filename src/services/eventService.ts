@@ -1,4 +1,4 @@
-import EventModel from 'src/models/eventModel'
+import EventModel from '../models/eventModel'
 import IEvent from '../interfaces/eventInterface'
 import AppError from '../errors/AppError'
 
