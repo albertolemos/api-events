@@ -14,17 +14,17 @@ const Multer = multer({
 
 const routes = Router()
 
-routes.get('/api', (req: Request, res: Response) =>
+routes.get('/', (req: Request, res: Response) =>
   res.status(200).json({ version: '0.0.1', online: true }),
 )
 
 routes.post(
-  '/api/event',
+  '/event',
   Multer.single('image'),
   uploadImage,
   eventMiddleware,
   createEventHandler,
 )
-routes.get('/api/event', getAllEventsHandler)
+routes.get('/event', getAllEventsHandler)
 
 export default routes
