@@ -54,7 +54,7 @@ $ cd api-events
 # Instale as dependências
 $ yarn
 
-# Execute os testes
+# Subindo a aplicação
 $ yarn dev
 
 ```
